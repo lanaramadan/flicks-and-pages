@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    background-color: #E9E3D9;
+}
+
+.body-content {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: #7D5454;
+    margin: -5px;
+}
+.slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #323232;
+}
+
+
+.book-question {
+    padding: 75px;
+    }
+.input-box {
+    background-color: rgba(255, 0, 0, 0);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    color: #323232;
+    text-align: left;
+
+    width: 1095px;
+    border: 3px solid #323232;
+
+    padding: 25px 45px;
+    border-radius: 43px;
+    display: inline-block;
+}
+
+
+.go-button {
+    background-color: #7D5454;
+    border: none;
+    padding: 25px 70px;
+    border-radius: 43px;
+    display: inline-block;
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: #E9E3D9;
+    text-align: center;
+    }

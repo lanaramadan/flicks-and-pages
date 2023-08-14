@@ -13,6 +13,19 @@
         <h2 class="description">Discover stories similar to {{book_name}}:</h2>
     </div>
 
+    {% if movies|length < 1 %}
+    <p class="slogan">There are no movies that match the book. Make sure you spelled everything correctly and try again</p>
+
+
+    {% else %}
+    <div class="movie-recs">
+        {% for movie in movies %}
+            <div class="movie">This is a movie</div>
+        {% endfor %}
+        </div>
+    {% endif %}
+
+
 
     <div class="generate-button">
         <button type="submit"class="go-button">← Start a New Search</button>

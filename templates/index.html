@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<Title>Flicks & Fables Home</Title>
+{% endblock %}
+
+
+
+{% block body %}
+<div class="body-content">
+    <div class="header"> 
+        <h1 class="title">Flicks & Pages: Story Recommender</h1>
+        <h2 class="slogan">Unlock Your Perfect Blend of Stories: Discover Your Next Page-Turner or Screen Gem!</h2>
+    </div>
+
+    <form actions="/" method="POST">
+      <div class="book-question">
+      <input type="text" name="book-name" class="input-box" placeholder="What's the name of a book you've enjoyed?">
+      </div>
+
+      <div class="generate-button">
+        <input type="submit"class="go-button" value="Generate Recommendations →">
+      </div>
+    </form>
+</div>
+{% endblock %}

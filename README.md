@@ -1,4 +1,4 @@
-# 🎬 Independent Project - Flicks & Pages
+# 🎬 Independent Project - Flicks & Pages (Work in Progress)
 **Unlock Your Perfect Blend of Stories: Discover Your Next Page-Turner or Screen Gem!**
 
 Flicks & Pages is a recommendation platform that brings together the best of both worlds: movies and books. Just enter a story you love and we'll recommend movies that match your taste. 

@@ -79,3 +79,22 @@ body {
     text-align: center;
     color: #323232;
     }
+
+.movie-recs {
+    display: flex;
+    gap: 40px;
+    /* align-items: center;
+    justify-content: center; */
+    padding: 5px 0px;
+
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}

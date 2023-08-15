@@ -21,7 +21,7 @@
     <div class="movie-recs">
         {% for movie in movies %}
             <div class="movie">
-                <p class="movie-title">{{movie.title}}</p>
+                <p class="movie-title">{{movie.movie_title}}</p>
                 <!-- img goes here -->
                 <p class="movie-description">{{movie.description}}</p>
             </div>
@@ -30,10 +30,10 @@
     {% endif %}
 
 
-
-    <div class="generate-button">
-        <button type="submit"class="go-button">← Start a New Search</button>
-      </div>
+    <form actions="/results" method="GET">
+        <div class="generate-button">
+            <button type="submit"class="go-button">← Start a New Search</button>
+        </div>
     </form>
 </div>>
 {% endblock %}

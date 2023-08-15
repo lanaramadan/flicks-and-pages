@@ -26,7 +26,6 @@ def generate_movies(movie_data, book_description):
     book_vector = tfidf.fit_transform([book_description])
     movie_matrix = tfidf.transform(movie_data['overview'])
 
-
     # calculate cosine similarity
     cos_similarity = cosine_similarity(movie_matrix, book_vector)
 
@@ -47,5 +46,3 @@ def get_movies(book_name, movie_data, book_description):
         Movie.movie_recs[book_name].append(movie_object)
 
     return Movie.movie_recs
-
-    

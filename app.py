@@ -25,16 +25,16 @@ def generate():
 
         movies = book2movie.get_movies(book_name, get_movie_data(), book_description)
 
-
-        return render_template('results.html', book_name=book_name, movies=movies)
+        return render_template('results.html', book_name=book_name, movies=movies[book_name])
     else:
         # otherwise, load the home page
         return render_template('index.html')
+    
 
+@app.route('/results')
+def back():
+    # if "start a new search" button is clicked, load the home page
+    return render_template('index.html')
 
 if __name__ == "__main__":
-    movie_data = get_movie_data()
-    description = book_api.get_book_description("Dune".replace(" ", "+"))
-    print(description)
-    print(list(book2movie.get_movies("Dune", get_movie_data(), description)))
-    # app.run(debug=True)
+    app.run(debug=True)

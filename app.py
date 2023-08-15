@@ -34,5 +34,7 @@ def generate():
 
 if __name__ == "__main__":
     movie_data = get_movie_data()
-    book2movie.get_movies("Dune", get_movie_data())
+    description = book_api.get_book_description("Dune".replace(" ", "+"))
+    print(description)
+    print(list(book2movie.get_movies("Dune", get_movie_data(), description)))
     # app.run(debug=True)

@@ -7,13 +7,15 @@ import numpy as np
 from flask import Flask
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
+import movie_api
 
 class Movie():
     movie_recs = {}
-    def __init__(self, book_title, movie_title, description):
+    def __init__(self, book_title, movie_title, description, image):
         self.book_title = book_title
         self.movie_title = movie_title
         self.description = description
+        self.image = image
 
 def generate_movies(movie_data, book_description):
     """Generates and returns 4 movies (and descriptions) based on the cosine similarity with the book description"""
@@ -42,7 +44,7 @@ def get_movies(book_name, movie_data, book_description):
     movies = generate_movies(movie_data, book_description)
     Movie.movie_recs[book_name] = []
     for movie in movies:
-        movie_object = Movie(book_title = book_name, movie_title = movie[0], description = movie[1])
+        movie_object = Movie(book_title = book_name, movie_title = movie[0], description = movie[1], image = movie_api.get_movie_image(movie[0]))
         Movie.movie_recs[book_name].append(movie_object)
 
     return Movie.movie_recs

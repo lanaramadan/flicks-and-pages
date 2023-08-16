@@ -6,8 +6,9 @@ import book2movie, book_api
 
 # TODO Display movie image by connecting to movie database
 # TODO tranfer to heroku? https://www.youtube.com/watch?v=Z1RJmh_OqeA
-# TODO replace kaggle with smth more accurate
+# TODO replace kaggle with smth more accurate (another database? cheking via genre?)
 # TODO loading images is really slow
+
 app = Flask(__name__)
 
 def get_movie_data():

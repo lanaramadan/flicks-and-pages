@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<Title>Flicks & Fables Results</Title>
+<Title>Story Suggest Results</Title>
 {% endblock %}
 
 
@@ -9,7 +9,7 @@
 {% block body %}
 <div class="body-content">
     <div class="header"> 
-        <h1 class="title">Flicks & Pages: Story Recommender</h1>
+        <h1 class="title">Story Suggest: A Story Recommender</h1>
         <h2 class="description">Discover stories similar to {{book_name}}:</h2>
     </div>
 
@@ -22,7 +22,7 @@
         {% for movie in movies %}
             <div class="movie">
                 <p class="movie-title">{{movie.movie_title}}</p>
-                <!-- img goes here -->
+                <img src="{{movie.image}}" alt="{{movie.movie_title}}'s Poster" class="movie-poster">
                 <p class="movie-description">{{movie.description}}</p>
             </div>
         {% endfor %}

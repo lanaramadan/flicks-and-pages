@@ -3,5 +3,5 @@
 
 Story Suggest  is a recommendation platform that brings together the best of both worlds: movies and books. Just enter a story you love and we'll recommend movies that match your taste. 
 
-Here's a walkthrough of what Story Suggest Looks like:  
+Here's a walkthrough of what Story Suggest looks like:  
 ![Story Suggest Gif](https://media.giphy.com/media/VLwTHaTbGDp9QYfOdZ/giphy.gif)
